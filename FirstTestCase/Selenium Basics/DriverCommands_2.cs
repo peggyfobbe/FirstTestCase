@@ -7,7 +7,7 @@ namespace FirstTestCase.Selenium_Basics
     class DriverCommands_2
     {
         [Test]
-        public void Test()
+        public void DriverCommands2()
         { 
         IWebDriver driver = new ChromeDriver();
 
