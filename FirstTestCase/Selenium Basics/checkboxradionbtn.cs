@@ -10,17 +10,10 @@ namespace FirstTestCase.Selenium_Basics
     class checkboxradionbtn
     {
 
-        IWebDriver Driver;
         //Launch new browser
+       
+        IWebDriver Driver = new ChromeDriver();
 
-        [SetUp]
-        
-        public void Initialize()
-        { 
-        Driver = new ChromeDriver();
-        Driver.Url = "http://toolsqa.wpengine.com/automation-practice-form/";
-        }
-                
         [Test]
 
         public void ChallengeOne()
@@ -30,6 +23,8 @@ namespace FirstTestCase.Selenium_Basics
             //Open Tools SQA Practice Automation Form
 
             
+            Driver.Url = "http://toolsqa.wpengine.com/automation-practice-form/";
+
             //Challegene One - Select the deselected Radio Button (female) for category Sex (Use IsSelected Method)
 
             IList<IWebElement> RadioBtn = Driver.FindElements(By.Name("sex"));
