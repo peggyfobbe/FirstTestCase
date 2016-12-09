@@ -1,12 +1,13 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using NUnit.Framework;
 
 namespace FirstTestCase.Selenium_Basics
 {
     class DriverCommands_2
     {
-        [Test]
+         [Test]
+
         public void DriverCommands2()
         { 
         IWebDriver driver = new ChromeDriver();

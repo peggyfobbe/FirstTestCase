@@ -1,18 +1,19 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using NUnit.Framework;
+
 
 namespace FirstTestCase.Selenium_Basics
 {
     class BrowserCommands
     {
-        [Test]
         public void BrowserCommand()
         {
-        IWebDriver driver = new ChromeDriver();
-
+          
+            IWebDriver driver = new ChromeDriver();
+            
             //Open DemoQA.com Website
-
+           
             driver.Navigate().GoToUrl("http://demoqa.com");
 
             driver.FindElement(By.XPath(".//*[@id='menu-item-374']/a")).Click();

@@ -1,9 +1,9 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using NUnit.Framework;
 
 namespace FirstTestCase.Selenium_Basics
 {
@@ -14,7 +14,8 @@ namespace FirstTestCase.Selenium_Basics
        
         IWebDriver Driver = new ChromeDriver();
 
-        [Test]
+
+       [Test]
 
         public void ChallengeOne()
         {

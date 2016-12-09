@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using NUnit.Framework; 
+using NUnit.Framework;
 
 
 namespace FirstTestCase
@@ -9,21 +9,22 @@ namespace FirstTestCase
     {
         IWebDriver driver;
 
-        [SetUp]
+     [SetUp]
+#pragma warning restore CS0246 // The type or namespace name 'SetUp' could not be found (are you missing a using directive or an assembly reference?)
         public void Initialize()
         {
             driver = new ChromeDriver();
         }
 
-        [Test]
+  [Test]
         public void OpenAppTest()
         {
             driver.Url = "http://www.demoqa.com";
             
         }
 
-        [TearDown]
-        public void EndTest()
+  [TearDown]
+     public void EndTest()
         {
             driver.Close();
         }

@@ -1,13 +1,13 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using NUnit.Framework;
 
 
 namespace FirstTestCase.Selenium_Basics
 {
     class WebElements
     {
-        [Test]
+ [Test]
         public void PracticeExercise1()
         {
 
@@ -25,7 +25,7 @@ namespace FirstTestCase.Selenium_Basics
             driver.FindElement(By.Id("submit")).Click();
         }
 
-        [Test]
+  [Test]
         public void PracticeExercise2()
         {
 

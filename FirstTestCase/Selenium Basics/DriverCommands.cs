@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using NUnit.Framework;
 using System;
+using NUnit.Framework;
 
 
 namespace FirstTestCase.Selenium_Basics
@@ -9,7 +9,7 @@ namespace FirstTestCase.Selenium_Basics
     class DriverCommands
     {
         [Test]
-        public void Test()
+         public void Test()
         {
         IWebDriver driver = new ChromeDriver();
 
